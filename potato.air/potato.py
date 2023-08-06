@@ -3,12 +3,15 @@ __author__ = "luo"
 
 from airtest.core.api import *
 
-auto_setup(__file__, ['Android://127.0.0.1:5037/192.168.100.229:5555'], True)
+auto_setup(__file__, ['Android://127.0.0.1:5037/192.168.100.229:5555'])
 
 wake()
-stop_app('com.iplay.potatoclash.taptap')
-start_app('com.iplay.potatoclash.taptap')
-sleep(30)
+
+
+def init_app():
+    stop_app('com.iplay.potatoclash.taptap')
+    start_app('com.iplay.potatoclash.taptap')
+    sleep(25)
 
 
 def up():
@@ -55,7 +58,7 @@ def box():
     if exists(Template(r"tpl1691204458677.png", record_pos=(-0.268, 0.621), resolution=(1080, 2340))):
         touch(Template(r"tpl1691204458677.png", record_pos=(-0.268, 0.621), resolution=(1080, 2340)))
         box_click()
-    
+
     # 2
     if exists(Template(r"tpl1691217801511.png", record_pos=(-0.032, 0.623), resolution=(1080, 2340))):
         touch(Template(r"tpl1691217801511.png", record_pos=(-0.032, 0.623), resolution=(1080, 2340)))
@@ -77,10 +80,10 @@ def get_coin():
     if exists(Template(r"tpl1691208248383.png", record_pos=(0.002, 0.211), resolution=(1080, 2340))):
         touch(Template(r"tpl1691208248383.png", record_pos=(0.002, 0.211), resolution=(1080, 2340)))
 
-    sleep(1)
+    sleep(2)
     touch(Template(r"tpl1691208098809.png", record_pos=(0.005, 0.269), resolution=(1080, 2340)))
     ad()
-    sleep(5)
+    sleep(10)
 
 
 def rune():
@@ -95,19 +98,12 @@ def rainbow():
     touch(Template(r"tpl1691203338351.png", record_pos=(-0.319, 0.048), resolution=(1080, 2340)))
     wait(Template(r"tpl1691144926391.png", record_pos=(0.002, 0.213), resolution=(1080, 2340)))
     touch(Template(r"tpl1691144926391.png", record_pos=(0.002, 0.213), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691142449380.png", record_pos=(0.003, 0.64), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691142449380.png", record_pos=(0.003, 0.64), resolution=(1080, 2340)))
     sleep(2)
-    if exists(Template(r"tpl1691144953753.png", record_pos=(0.004, 0.633), resolution=(1080, 2340))):
-        touch(Template(r"tpl1691144953753.png", record_pos=(0.004, 0.633), resolution=(1080, 2340)))
-    if exists(Template(r"tpl1691204188899.png", record_pos=(0.367, -0.262), resolution=(1080, 2340))):
-        touch(Template(r"tpl1691204188899.png", record_pos=(0.367, -0.262), resolution=(1080, 2340)))
-
-    wait(Template(r"tpl1691200133024.png", record_pos=(0.003, 0.859), resolution=(1080, 2340)))
     touch(Template(r"tpl1691200133024.png", record_pos=(0.003, 0.859), resolution=(1080, 2340)))
     ad()
-    sleep(2)
-    if exists(Template(r"tpl1691144953753.png", record_pos=(0.004, 0.633), resolution=(1080, 2340))):
-        touch(Template(r"tpl1691144953753.png", record_pos=(0.004, 0.633), resolution=(1080, 2340)))
-    sleep(3)
+    sleep(10)
 
 
 def fight():
@@ -170,7 +166,7 @@ def farm():
     if exists(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340))):
         touch(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340)))
         wait(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
-        touch(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
 
 
 def ad():
@@ -186,10 +182,19 @@ def ad():
         touch(Template(r"tpl1691197986546.png", record_pos=(0.405, -0.986), resolution=(1080, 2340)))
 
 
+def task(func):
+    try:
+        func()
+    except:
+        init_app()
+
+
 def run():
-    fight()
-    store()
-    league()
+    init_app()
+    task(fight)
+    task(store)
+    task(league)
+    task(fight)
     farm()
 
 
