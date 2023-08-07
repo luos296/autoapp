@@ -28,8 +28,9 @@ def sign():
         if exists(Template(r"tpl1691197836007.png", record_pos=(0.228, 0.43), resolution=(1080, 2340))):
             touch(Template(r"tpl1691197836007.png", record_pos=(0.228, 0.43), resolution=(1080, 2340)))
             ad()
-        wait(Template(r"tpl1691142449380.png", record_pos=(0.003, 0.64), resolution=(1080, 2340)))
-        touch(Template(r"tpl1691142449380.png", record_pos=(0.003, 0.64), resolution=(1080, 2340)))
+        sleep(2)
+        if exists(Template(r"tpl1691142449380.png", record_pos=(0.003, 0.64), resolution=(1080, 2340))):
+            touch(Template(r"tpl1691142449380.png", record_pos=(0.003, 0.64), resolution=(1080, 2340)))
         touch(Template(r"tpl1691142535522.png", record_pos=(0.44, -0.531), resolution=(1080, 2340)))
 
 
@@ -104,19 +105,40 @@ def rainbow():
     touch(Template(r"tpl1691200133024.png", record_pos=(0.003, 0.859), resolution=(1080, 2340)))
     ad()
     sleep(10)
-
-
-def fight():
-    # 签到
-    sign()
-    # 视频宝箱
+    
+def video():
     touch(Template(r"tpl1691149282624.png", record_pos=(-0.4, -0.799), resolution=(1080, 2340)))
     for i in range(3):
         video_task()
     wait(Template(r"tpl1691198778535.png", record_pos=(0.427, -0.581), resolution=(1080, 2340)))
     touch(Template(r"tpl1691198778535.png", record_pos=(0.427, -0.581), resolution=(1080, 2340)))
+    
+def rank():
+    touch(Template(r"tpl1691370915530.png", record_pos=(0.131, -0.943), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691370947886.png", record_pos=(0.137, -0.697), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691370947886.png", record_pos=(0.137, -0.697), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691370994442.png", record_pos=(-0.229, 0.007), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691370994442.png", record_pos=(-0.229, 0.007), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691371076104.png", record_pos=(0.002, 0.634), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691371076104.png", record_pos=(0.002, 0.634), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691371122229.png", record_pos=(0.209, 0.006), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691371076104.png", record_pos=(0.002, 0.634), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691371076104.png", record_pos=(0.002, 0.634), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691371146422.png", record_pos=(-0.015, 0.6), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691371076104.png", record_pos=(0.002, 0.634), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691371076104.png", record_pos=(0.002, 0.634), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691371178788.png", record_pos=(0.445, -0.689), resolution=(1080, 2340)))
+
+
+def fight():
+    # 签到
+    task(sign)
+    # 视频宝箱
+    task(video)
+    # 排行点赞
+    task(rank)
     # 箱子加速
-    box()
+    task(box)
 
 
 def store():
