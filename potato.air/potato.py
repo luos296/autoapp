@@ -19,6 +19,11 @@ def up():
     sleep(1)
 
 
+def down():
+    swipe((540, 600), (540, 1800), duration=1, steps=6)
+    sleep(1)
+
+
 def sign():
     if exists(Template(r"tpl1691142414598.png", record_pos=(0.023, -0.484), resolution=(1080, 2340))):
         wait(Template(r"tpl1691142414598.png", record_pos=(0.023, -0.484), resolution=(1080, 2340)))
@@ -105,14 +110,16 @@ def rainbow():
     touch(Template(r"tpl1691200133024.png", record_pos=(0.003, 0.859), resolution=(1080, 2340)))
     ad()
     sleep(10)
-    
+
+
 def video():
     touch(Template(r"tpl1691149282624.png", record_pos=(-0.4, -0.799), resolution=(1080, 2340)))
     for i in range(3):
         video_task()
     wait(Template(r"tpl1691198778535.png", record_pos=(0.427, -0.581), resolution=(1080, 2340)))
     touch(Template(r"tpl1691198778535.png", record_pos=(0.427, -0.581), resolution=(1080, 2340)))
-    
+
+
 def rank():
     touch(Template(r"tpl1691370915530.png", record_pos=(0.131, -0.943), resolution=(1080, 2340)))
     wait(Template(r"tpl1691370947886.png", record_pos=(0.137, -0.697), resolution=(1080, 2340)))
@@ -189,6 +196,52 @@ def farm():
         touch(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340)))
         wait(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
+    if exists(Template(r"tpl1691405335155.png", record_pos=(-0.255, -0.207), resolution=(1080, 2340))):
+        touch(Template(r"tpl1691405335155.png", record_pos=(-0.255, -0.207), resolution=(1080, 2340)))
+        wait(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        ad()
+        wait(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        sleep(1)
+        touch(Template(r"tpl1691411698518.png", record_pos=(-0.245, -0.141), resolution=(1080, 2340)))
+        sleep(2)
+        swipe((540, 1500), (540, 900), duration=1, steps=6)
+        touch(Template(r"tpl1691411819619.png", record_pos=(-0.106, 0.106), resolution=(1080, 2340)))
+    if exists(Template(r"tpl1691411849672.png", record_pos=(0.253, -0.203), resolution=(1080, 2340))):
+        touch(Template(r"tpl1691411849672.png", record_pos=(0.253, -0.203), resolution=(1080, 2340)))
+        wait(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        ad()
+        wait(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        sleep(1)
+        touch(Template(r"tpl1691411952349.png", record_pos=(0.26, -0.127), resolution=(1080, 2340)))
+        sleep(2)
+        swipe((540, 900), (540, 1500), duration=1, steps=6)
+        touch(Template(r"tpl1691412463628.png", record_pos=(0.099, -0.142), resolution=(1080, 2340)))
+    if exists(Template(r"tpl1691412585752.png", record_pos=(-0.224, 0.178), resolution=(1080, 2340))):
+        touch(Template(r"tpl1691412585752.png", record_pos=(-0.224, 0.178), resolution=(1080, 2340)))
+        wait(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        ad()
+        wait(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        sleep(1)
+        touch(Template(r"tpl1691412662933.png", record_pos=(-0.218, 0.248), resolution=(1080, 2340)))
+        sleep(2)
+        touch(Template(r"tpl1691412690793.png", record_pos=(-0.106, 0.249), resolution=(1080, 2340)))
+    if exists(Template(r"tpl1691412719006.png", record_pos=(0.23, 0.178), resolution=(1080, 2340))):
+        touch(Template(r"tpl1691412719006.png", record_pos=(0.23, 0.178), resolution=(1080, 2340)))
+        wait(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
+        ad()
+        wait(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691411641203.png", record_pos=(0.006, 0.633), resolution=(1080, 2340)))
+        sleep(1)
+        touch(Template(r"tpl1691412868704.png", record_pos=(0.233, 0.256), resolution=(1080, 2340)))
+        sleep(2)
+        touch(Template(r"tpl1691412905574.png", record_pos=(0.305, 0.25), resolution=(1080, 2340)))
 
 
 def ad():

@@ -191,7 +191,7 @@ def task(func):
 
 def run():
     init_app()
-    box()
+    farm()
 
 
 if __name__ == '__main__':
