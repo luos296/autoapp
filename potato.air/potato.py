@@ -190,6 +190,9 @@ def league():
 
 def farm():
     wait(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
+    sleep(2)
+    touch(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
     touch(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
     sleep(2)
     if exists(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340))):
