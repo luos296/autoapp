@@ -184,7 +184,9 @@ def league():
     ad()
     wait(Template(r"tpl1691205842087.png", record_pos=(0.002, 0.636), resolution=(1080, 2340)))
     touch(Template(r"tpl1691205842087.png", record_pos=(0.002, 0.636), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691205878201.png", record_pos=(0.438, -0.406), resolution=(1080, 2340)))
     touch(Template(r"tpl1691205878201.png", record_pos=(0.438, -0.406), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691205893655.png", record_pos=(0.461, -0.726), resolution=(1080, 2340)))
     touch(Template(r"tpl1691205893655.png", record_pos=(0.461, -0.726), resolution=(1080, 2340)))
 
 
@@ -192,8 +194,7 @@ def farm():
     wait(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
     sleep(2)
     touch(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
-    touch(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
-    touch(Template(r"tpl1691206218825.png", record_pos=(0.427, 0.995), resolution=(1080, 2340)))
+
     sleep(2)
     if exists(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340))):
         touch(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340)))
@@ -264,6 +265,7 @@ def task(func):
     try:
         func()
     except:
+        log(f"____________{func.__name__}执行失败_____________")
         init_app()
 
 
@@ -278,3 +280,4 @@ def run():
 
 if __name__ == '__main__':
     run()
+    keyevent('POWER')
