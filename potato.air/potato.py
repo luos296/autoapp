@@ -200,6 +200,7 @@ def farm():
         touch(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340)))
         wait(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
+        ad()
     if exists(Template(r"tpl1691405335155.png", record_pos=(-0.255, -0.207), resolution=(1080, 2340))):
         touch(Template(r"tpl1691405335155.png", record_pos=(-0.255, -0.207), resolution=(1080, 2340)))
         wait(Template(r"tpl1691405364034.png", record_pos=(0.205, 0.201), resolution=(1080, 2340)))
@@ -253,8 +254,10 @@ def ad():
     if exists(Template(r"tpl1691147046441.png", record_pos=(0.006, 0.51), resolution=(1080, 2340))):
         touch(Template(r"tpl1691147046441.png", record_pos=(0.006, 0.51), resolution=(1080, 2340)))
     sleep(10)
-    wait(Template(r"tpl1691145090649.png", record_pos=(0.405, -0.932), resolution=(1080, 2340)))
-    touch(Template(r"tpl1691145090649.png", record_pos=(0.405, -0.932), resolution=(1080, 2340)))
+#     wait(Template(r"tpl1691145090649.png", record_pos=(0.405, -0.932), resolution=(1080, 2340)))
+#     touch(Template(r"tpl1691145090649.png", record_pos=(0.405, -0.932), resolution=(1080, 2340)))
+    wait(Template(r"tpl1691631186295.png", record_pos=(0.409, -0.927), resolution=(1080, 2340)))
+    touch(Template(r"tpl1691631186295.png", record_pos=(0.409, -0.927), resolution=(1080, 2340)))
     sleep(1.0)
 
     if exists(Template(r"tpl1691197986546.png", record_pos=(0.405, -0.986), resolution=(1080, 2340))):
