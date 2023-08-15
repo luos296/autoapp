@@ -275,7 +275,7 @@ def task(func):
 def run():
     init_app()
     task(fight)
-    task(store)
+    # task(store)
     task(league)
     task(fight)
     farm()
