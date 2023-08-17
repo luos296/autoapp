@@ -158,6 +158,8 @@ def store():
     touch(Template(r"tpl1691143280953.png", record_pos=(-0.349, -0.744), resolution=(1080, 2340)))
     up()
     up()
+    up()
+    up()
     for i in range(3):
         get_coin()
 
