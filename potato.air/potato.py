@@ -151,6 +151,8 @@ def fight():
 def store():
     # 领取符文
     touch(Template(r"tpl1691143170546.png", record_pos=(-0.419, 1.011), resolution=(1080, 2340)))
+    wait(Template(r"tpl1692516234520.png", record_pos=(-0.119, -0.749), resolution=(1080, 2340)))
+    touch(Template(r"tpl1692516234520.png", record_pos=(-0.119, -0.749), resolution=(1080, 2340)))
     for i in range(3):
         rune()
     # 特惠商店
@@ -198,6 +200,11 @@ def farm():
     sleep(2)
     if exists(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340))):
         touch(Template(r"tpl1691206305555.png", record_pos=(-0.192, -0.558), resolution=(1080, 2340)))
+        wait(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
+        touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
+        ad()
+        sleep(2)
+        touch(v=(770, 650))
         wait(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         ad()
