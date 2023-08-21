@@ -206,7 +206,10 @@ def farm():
         touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         ad()
         sleep(2)
-        touch(v=(770, 650))
+    if exists(Template(r"tpl1692579860660.png", record_pos=(0.209, -0.552), resolution=(1080, 2340))):
+        
+
+        touch(Template(r"tpl1692579860660.png", record_pos=(0.209, -0.552), resolution=(1080, 2340)))
         wait(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         touch(Template(r"tpl1691206380730.png", record_pos=(-0.001, 0.127), resolution=(1080, 2340)))
         ad()
