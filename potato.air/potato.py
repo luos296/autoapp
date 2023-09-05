@@ -156,14 +156,14 @@ def store():
     for i in range(3):
         rune()
     # 特惠商店
-    wait(Template(r"tpl1691143280953.png", record_pos=(-0.349, -0.744), resolution=(1080, 2340)))
-    touch(Template(r"tpl1691143280953.png", record_pos=(-0.349, -0.744), resolution=(1080, 2340)))
-    up()
-    up()
-    up()
-    up()
-    for i in range(3):
-        get_coin()
+    # wait(Template(r"tpl1691143280953.png", record_pos=(-0.349, -0.744), resolution=(1080, 2340)))
+    # touch(Template(r"tpl1691143280953.png", record_pos=(-0.349, -0.744), resolution=(1080, 2340)))
+    # up()
+    # up()
+    # up()
+    # up()
+    # for i in range(3):
+    #     get_coin()
 
     # 领取彩虹豆
     wait(Template(r"tpl1691144808706.png", record_pos=(0.119, -0.744), resolution=(1080, 2340)))
